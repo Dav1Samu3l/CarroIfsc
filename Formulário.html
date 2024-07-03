@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Lavação de Carros</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Agendamento</h1>
+        <form action="/submit_form" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="data">Data de Agendamento:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="servico">Serviço:</label>
+            <select id="servico" name="servico">
+                <option value="lavagem_simples">Lavagem Simples</option>
+                <option value="lavagem_completa">Lavagem Completa</option>
+                <option value="polimento">Polimento</option>
+            </select>
+
+            
+            
+            
+            
+            <button type="submit">Agendar</button>
+            
+            <br>
+
+                        <a href="infoCli.html" class="button">Informações pessoais</a> <br>
+
+                        <a href="infoProd.html" class="button">Informações de Produto</a>          
+        </form>
+    </div>
+</body>
+</html>
